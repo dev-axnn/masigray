@@ -222,3 +222,14 @@ window.onload = function () {
   storeShow('#store-3', storeArr[2]);
   storeShow('#store-4', storeArr[3]);
 }
+
+$(document).ready(function(){
+  // Modal 기능
+  let modalWrap = $('.modal-wrap');
+  let modalClose = $('.modal-close');
+  // click() 을 이용해서 hide() 해보자!
+  modalClose.click(function(){
+    // modalWrap.hide();
+    modalWrap.stop().fadeOut(300);
+  });
+});
